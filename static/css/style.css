@@ -2,8 +2,8 @@ body,html{
 	height: 100%;
 	margin: 0;
 	background: rgb(44, 47, 59);
-   background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(54, 60, 70), rgb(32, 32, 43));
-	background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
+   	background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(54, 60, 70), rgb(32, 32, 43));
+	background: linear-gradient(to bottom, rgb(45, 78, 51), rgb(44, 43, 43), rgb(59, 59, 118));
 }
 
 .chat{
@@ -22,6 +22,24 @@ body,html{
 }
 .msg_card_body{
 	overflow-y: auto;
+}
+#MessageFormHeight::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+#MessageFormHeight::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 15px; /* Rounded corners */
+	margin: 2px;
+}
+
+#MessageFormHeight::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color on hover */
+}
+
+#MessageFormHeight::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 15px;
 }
 .card-header{
 	border-radius: 15px 15px 0 0 !important;
@@ -91,14 +109,14 @@ border-radius: 0 0 15px 15px !important;
 .user_img{
 	height: 70px;
 	width: 70px;
-	border:1.5px solid #f5f6fa;
+	background-color: #f5f6fa;
 
 }
 .user_img_msg{
 	height: 40px;
 	width: 40px;
 	border:1.5px solid #f5f6fa;
-
+	background-color: #f5f6fa;
 }
 .img_cont{
 	position: relative;
